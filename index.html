@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 Epic Birthday Experience 2026 🎂</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Russo+One&family=Audiowide&family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Dynamic Background -->
+    <div class="dynamic-bg">
+        <div class="bg-grid"></div>
+        <div class="bg-pulse"></div>
+        <div class="bg-lines"></div>
+    </div>
+
+    <!-- Page 1: Welcome -->
+    <section id="page1" class="page active">
+        <div class="container">
+            <div class="welcome-content">
+                <div class="cyber-card">
+                    <div class="cyber-border">
+                        <div class="cyber-corner tl"></div>
+                        <div class="cyber-corner tr"></div>
+                        <div class="cyber-corner bl"></div>
+                        <div class="cyber-corner br"></div>
+                    </div>
+                    
+                    <div class="glitch-title">
+                        <h1 class="main-title">
+                            <span class="title-line">🎂 ULTIMATE BIRTHDAY</span>
+                            <span class="title-line">EXPERIENCE 2026</span>
+                        </h1>
+                        <div class="glitch-overlay" data-text="🎂 ULTIMATE BIRTHDAY EXPERIENCE 2026">🎂 ULTIMATE BIRTHDAY EXPERIENCE 2026</div>
+                    </div>
+                    
+                    <div class="cyber-input-group">
+                        <div class="input-container">
+                            <div class="input-label">
+                                <i class="fas fa-user-astronaut"></i>
+                                <span>ENTER YOUR NAME</span>
+                            </div>
+                            <input type="text" id="nameInput" placeholder="TYPE YOUR NAME HERE..." maxlength="20" autocomplete="off">
+                            <div class="input-scanline"></div>
+                        </div>
+                        <div class="input-info">
+                            <div class="char-display">
+                                <span class="char-label">CHARACTERS:</span>
+                                <span id="charCount" class="char-value">0</span>
+                                <span class="char-max">/20</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <button id="startBtn" class="cyber-button">
+                            <span class="cyber-button-content">
+                                <i class="fas fa-rocket"></i>
+                                <span>LAUNCH CELEBRATION</span>
+                                <i class="fas fa-bolt"></i>
+                            </span>
+                            <div class="cyber-button-glow"></div>
+                            <div class="cyber-button-sparkles"></div>
+                        </button>
+                        
+                        <button id="demoBtn" class="cyber-button secondary">
+                            <i class="fas fa-eye"></i>
+                            <span>DEMO MODE</span>
+                        </button>
+                    </div>
+                    
+                    <div class="terminal-output">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">>></span>
+                            <span class="terminal-text">SYSTEM READY FOR CELEBRATION SEQUENCE</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">>></span>
+                            <span class="terminal-text">ENTER NAME TO INITIATE BIRTHDAY PROTOCOL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hologram-effect">
+                        <div class="hologram-line"></div>
+                        <div class="hologram-line"></div>
+                        <div class="hologram-line"></div>
+                    </div>
+                </div>
+                
+                <!-- Digital Particles -->
+                <div class="digital-particles"></div>
+                
+                <!-- Neon Decorations -->
+                <div class="neon-decorations">
+                    <div class="neon ne1">✦</div>
+                    <div class="neon ne2">✧</div>
+                    <div class="neon ne3">✦</div>
+                    <div class="neon ne4">✧</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 2: Cake Cutting -->
+    <section id="page2" class="page">
+        <div class="container">
+            <div class="cake-content">
+                <div class="cyber-header">
+                    <div class="header-back" id="backToWelcome">
+                        <i class="fas fa-arrow-circle-left"></i>
+                        <span>BACK</span>
+                    </div>
+                    
+                    <div class="header-title">
+                        <h2 id="cakeTitle" class="section-title">
+                            <span class="title-glitch">HAPPY BIRTHDAY</span>
+                            <span id="userNameDisplay" class="name-neon"></span>
+                        </h2>
+                        <div class="header-subtitle">
+                            <i class="fas fa-crosshairs"></i>
+                            <span>CAKE CUTTING SEQUENCE INITIATED</span>
+                        </div>
+                    </div>
+                    
+                    <div class="header-stats">
+                        <div class="stat">
+                            <span class="stat-label">STATUS:</span>
+                            <span class="stat-value" id="statusText">READY</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">COUNTDOWN:</span>
+                            <span class="stat-value" id="cutTimer">5</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cutting-scene">
+                    <!-- Platform -->
+                    <div class="platform">
+                        <div class="platform-top"></div>
+                        <div class="platform-base"></div>
+                        <div class="platform-glow"></div>
+                    </div>
+                    
+                    <!-- Real Cake Image -->
+                    <div class="cake-real-container">
+                        <img src="cake.png" alt="Birthday Cake" class="cake-image" id="cakeImage">
+                        <div class="cake-glow"></div>
+                        <div class="cake-sparkles"></div>
+                    </div>
+                    
+                    <!-- Cutting Guide -->
+                    <div class="cutting-guide">
+                        <div class="guide-line"></div>
+                        <div class="guide-marker start"></div>
+                        <div class="guide-marker middle"></div>
+                        <div class="guide-marker end"></div>
+                    </div>
+                    
+                    <!-- Real Knife Image -->
+                    <div class="knife-real-container" id="knifeContainer">
+                        <img src="knife.png" alt="Cake Knife" class="knife-image" id="knifeImage">
+                        <div class="knife-glow"></div>
+                        <div class="knife-trail"></div>
+                    </div>
+                    
+                    <!-- Cut Effect -->
+                    <div class="cut-effect" id="cutLine">
+                        <div class="cut-glow"></div>
+                        <div class="cut-particles"></div>
+                    </div>
+                </div>
+                
+                <div class="control-panel">
+                    <div class="panel-display">
+                        <div class="display-text">
+                            <i class="fas fa-info-circle"></i>
+                            <span>CAKE WILL BE CUT AUTOMATICALLY</span>
+                        </div>
+                        <div class="display-timer">
+                            <span>PROCEEDING IN <span id="autoTimer">5</span>s</span>
+                        </div>
+                    </div>
+                    
+                    <div class="panel-buttons">
+                        <button id="cutNowBtn" class="panel-button primary">
+                            <i class="fas fa-cut"></i>
+                            <span>CUT NOW</span>
+                        </button>
+                        <button id="skipCutBtn" class="panel-button">
+                            <i class="fas fa-forward"></i>
+                            <span>SKIP</span>
+                        </button>
+                    </div>
+                    
+                    <div class="progress-indicator">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="cutProgress"></div>
+                        </div>
+                        <div class="progress-label">
+                            <span>CUTTING PROGRESS</span>
+                            <span id="progressPercent">0%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="holographic-warning">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>WARNING: CAKE CONTAINS HIGH LEVELS OF HAPPINESS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 3: Message -->
+    <section id="page3" class="page">
+        <div class="container">
+            <div class="message-content">
+                <div class="cyber-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-envelope"></i>
+                        <span>ENCRYPTED MESSAGE</span>
+                    </h2>
+                    <div class="header-subtitle">
+                        <span>SECURE COMMUNICATION CHANNEL OPENED</span>
+                    </div>
+                </div>
+                
+                <div class="message-scene">
+                    <div class="envelope-container" id="envelopeWrapper">
+                        <!-- Envelope with Cyber Style -->
+                        <div class="cyber-envelope">
+                            <div class="envelope-base">
+                                <div class="envelope-pattern"></div>
+                                <div class="envelope-glow"></div>
+                            </div>
+                            <div class="envelope-flap">
+                                <div class="flap-glow"></div>
+                                <div class="flap-seal">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                            </div>
+                            <div class="envelope-content">
+                                <div class="content-preview">
+                                    <i class="fas fa-user-secret"></i>
+                                    <span>FOR: <span id="letterUserName"></span></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="envelope-instruction">
+                            <i class="fas fa-hand-pointer animated bounce infinite"></i>
+                            <span>CLICK TO DECRYPT MESSAGE</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Message Container (Initially Hidden) -->
+                    <div class="message-container" id="letterContainer">
+                        <div class="message-terminal">
+                            <div class="terminal-header">
+                                <div class="terminal-controls">
+                                    <div class="control close"></div>
+                                    <div class="control minimize"></div>
+                                    <div class="control maximize"></div>
+                                </div>
+                                <div class="terminal-title">
+                                    <i class="fas fa-file-alt"></i>
+                                    <span>SECURE_MESSAGE.TXT</span>
+                                </div>
+                            </div>
+                            
+                            <div class="terminal-body">
+                                <div class="message-header">
+                                    <div class="message-info">
+                                        <span class="info-label">FROM:</span>
+                                        <span class="info-value">SYSTEM_ADMIN</span>
+                                    </div>
+                                    <div class="message-info">
+                                        <span class="info-label">TO:</span>
+                                        <span id="letterRecipient" class="info-value"></span>
+                                    </div>
+                                    <div class="message-info">
+                                        <span class="info-label">DATE:</span>
+                                        <span class="info-value">10-JAN-2026</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="message-content" id="letterContent">
+                                    <!-- Message will be loaded here -->
+                                </div>
+                                
+                                <div class="message-footer">
+                                    <div class="signature">
+                                        <div class="signature-line"></div>
+                                        <div class="signature-name">
+                                            <i class="fas fa-terminal"></i>
+                                            <span>SYSTEM TERMINAL</span>
+                                        </div>
+                                    </div>
+                                    <div class="encryption-badge">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>ENCRYPTION: ACTIVE</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="terminal-footer">
+                                <div class="footer-status">
+                                    <i class="fas fa-circle status-online"></i>
+                                    <span>CONNECTION SECURE</span>
+                                </div>
+                                <div class="footer-time">
+                                    <i class="fas fa-clock"></i>
+                                    <span id="currentTime">--:--:--</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="message-effects">
+                            <div class="effect code-rain"></div>
+                            <div class="effect scan-line"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="message-controls">
+                    <button id="autoOpenBtn" class="control-button">
+                        <i class="fas fa-play"></i>
+                        <span>AUTO DECRYPT</span>
+                    </button>
+                    <button id="nextPageBtn" class="control-button primary">
+                        <i class="fas fa-arrow-right"></i>
+                        <span>CONTINUE</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 4: Celebration -->
+    <section id="page4" class="page">
+        <div class="container">
+            <div class="celebration-content">
+                <!-- Background Elements -->
+                <div class="celebration-bg">
+                    <div class="bg-element el1">✦</div>
+                    <div class="bg-element el2">✧</div>
+                    <div class="bg-element el3">✦</div>
+                    <div class="bg-element el4">✧</div>
+                </div>
+                
+                <!-- Main Celebration -->
+                <div class="celebration-main">
+                    <!-- Animated Title -->
+                    <div class="celebration-title">
+                        <h1 id="finalGreeting" class="glitch-text">
+                            <span class="glitch-layers">
+                                <span class="layer-1">HAPPY BIRTHDAY</span>
+                                <span class="layer-2">HAPPY BIRTHDAY</span>
+                                <span class="layer-3">HAPPY BIRTHDAY</span>
+                            </span>
+                        </h1>
+                        <div class="title-sub">
+                            <span class="sub-text">
+                                <i class="fas fa-star"></i>
+                                <span id="finalUserName" class="name-glitch"></span>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!-- Celebration Display -->
+                    <div class="celebration-display">
+                        <div class="cake-display">
+                            <div class="cake-final">
+                                <div class="cake-slice"></div>
+                                <div class="cake-glow-final"></div>
+                            </div>
+                            <div class="celebration-particles"></div>
+                        </div>
+                        
+                        <!-- Add this in Page 4: Celebration section, after the cake display -->
+<div class="enhanced-celebration">
+    <!-- Fireworks -->
+    <div class="firework-container">
+        <div class="firework fw1"></div>
+        <div class="firework fw2"></div>
+        <div class="firework fw3"></div>
+        <div class="firework fw4"></div>
+    </div>
+    
+    <!-- Balloons -->
+    <div class="balloon-container">
+        <div class="balloon b1">🎈</div>
+        <div class="balloon b2">🎈</div>
+        <div class="balloon b3">🎈</div>
+        <div class="balloon b4">🎈</div>
+        <div class="balloon b5">🎈</div>
+    </div>
+    
+    <!-- Sparkle Rain -->
+    <div class="sparkle-rain"></div>
+    
+    <!-- Party Poppers -->
+    <div class="popper-container">
+        <div class="popper p1">🎉</div>
+        <div class="popper p2">🎉</div>
+        <div class="popper p3">🎉</div>
+    </div>
+    
+    <!-- Floating Hearts -->
+    <div class="heart-container">
+        <div class="heart h1">❤️</div>
+        <div class="heart h2">💙</div>
+        <div class="heart h3">💚</div>
+        <div class="heart h4">💛</div>
+        <div class="heart h5">💜</div>
+    </div>
+</div>
+                        <!-- Blessing Message -->
+                        <div class="blessing-message">
+                            <div class="blessing-header">
+                                <i class="fas fa-praying-hands"></i>
+                                <span>SYSTEM BLESSING</span>
+                            </div>
+                            <div class="blessing-text">
+                                <p>MAY ALLAH GRANT YOU</p>
+                                <p>INFINITE HAPPINESS AND PROSPERITY</p>
+                                <p>IN THIS LIFE AND HEREAFTER</p>
+                            </div>
+                            <div class="blessing-footer">
+                                <i class="fas fa-code"></i>
+                                <span>PROTOCOL: BLESSING.EXE</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Personal Message -->
+                        <div class="personal-note">
+                            <div class="note-header">
+                                <i class="fas fa-quote-left"></i>
+                                <span>FINAL TRANSMISSION</span>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <div class="note-content" id="personalMessage">
+                                YOUR JOURNEY AHEAD IS FILLED WITH ENDLESS POSSIBILITIES.
+                                MAY EVERY STEP BRING YOU CLOSER TO YOUR DREAMS.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Confetti Area -->
+                    <div class="confetti-area" id="confettiArea"></div>
+                    
+                    <!-- Celebration Effects -->
+                    <div class="celebration-effects">
+                        <div class="effect firework"></div>
+                        <div class="effect pulse-ring"></div>
+                        <div class="effect data-stream"></div>
+                    </div>
+                </div>
+                
+                <!-- Controls -->
+                <div class="celebration-controls">
+                    <div class="controls-grid">
+                        <button id="restartBtn" class="control-grid-button">
+                            <i class="fas fa-redo"></i>
+                            <span>RESTART</span>
+                        </button>
+                        
+                        <button id="musicBtn" class="control-grid-button">
+                            <i class="fas fa-music"></i>
+                            <span id="musicStatus">MUSIC ON</span>
+                        </button>
+                        
+                        <button id="shareBtn" class="control-grid-button">
+                            <i class="fas fa-share-alt"></i>
+                            <span>SHARE</span>
+                        </button>
+                        
+                        <button id="saveBtn" class="control-grid-button">
+                            <i class="fas fa-download"></i>
+                            <span>SAVE</span>
+                        </button>
+                    </div>
+                    
+                    <div class="social-terminal">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">echo "SPREAD THE JOY"</span>
+                        </div>
+                        <div class="social-buttons">
+                            <button class="social-button">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button class="social-button">
+                                <i class="fab fa-facebook"></i>
+                            </button>
+                            <button class="social-button">
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                            <button class="social-button">
+                                <i class="fab fa-instagram"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer -->
+                <div class="cyber-footer">
+                    <div class="footer-line"></div>
+                    <div class="footer-text">
+                        <i class="fas fa-heart"></i>
+                        <span>SYSTEM GENERATED WITH LOVE</span>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="footer-copyright">
+                        <span>© 2026 CYBER CELEBRATION PROTOCOL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Elements -->
+    <audio id="bgMusic" loop preload="auto">
+        <source src="https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-130.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="celebrationSound" preload="auto">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-game-show-suspense-waiting-667.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="typingSound" preload="auto">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-fast-robot-bleep-909.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="cutSound" preload="auto">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-sword-cutting-flesh-2780.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-terminal">
+            <div class="terminal-header">
+                <div class="terminal-title">SYSTEM BOOT</div>
+                <div class="terminal-status">INITIALIZING...</div>
+            </div>
+            <div class="terminal-body">
+                <div class="boot-line">
+                    <span class="boot-text">LOADING CELEBRATION PROTOCOL...</span>
+                    <span class="boot-dots"></span>
+                </div>
+                <div class="boot-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="progress-text">
+                        <span>0%</span>
+                    </div>
+                </div>
+                <div class="boot-commands">
+                    <div class="command-line">
+                        <span>> INITIALIZING GRAPHICS...</span>
+                        <span class="status-ok">[OK]</span>
+                    </div>
+                    <div class="command-line">
+                        <span>> LOADING AUDIO SYSTEMS...</span>
+                        <span class="status-ok">[OK]</span>
+                    </div>
+                    <div class="command-line">
+                        <span>> PREPARING ANIMATIONS...</span>
+                        <span class="status-ok">[OK]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Particle System -->
+    <div id="particleSystem" class="particle-system"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

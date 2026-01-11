@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="envelope" viewBox="0 0 300 200"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Back -->
+  <rect x="20" y="50" width="260" height="120" rx="10" fill="#f7c6d0"/>
+
+  <!-- Letter -->
+  <rect id="letter" x="40" y="40" width="220" height="120" rx="6" fill="#fff"/>
+
+  <!-- Front -->
+  <path id="front"
+        d="M20 50 L150 130 L280 50 V170 H20 Z"
+        fill="#f2a7b5"/>
+
+  <!-- Flap -->
+  <path id="flap"
+        d="M20 50 L150 130 L280 50 Z"
+        fill="#e88fa2"/>
+
+</svg>
